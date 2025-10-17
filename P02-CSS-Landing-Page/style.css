@@ -1,0 +1,134 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.features {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem; 
+}
+
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.feature-card {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+
+/* Mobile-first base styles */
+
+.hero {
+padding:4rem 2rem;
+text-align: center;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #667eea;
+}
+
+
+
+/* Tablet and Desktop styles*/
+
+@media (min-width: 768px) {
+    /*Enhance navigation for larger screens */
+    nav {
+        padding: 1.5rem 4rem;
+    }
+    /* Make hero section more spacious */
+    .hero {
+        padding: 6rem 4rem;
+    }
+
+    .hero h1{
+        font-size: 3rem;
+    
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    /* Enhance feature grid layout */
+
+.feature-grid {
+    justify-content: space-around;
+}
+
+.feature-card {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: 400px;
+
+}
+
+}
+
+/* Optional: Desktop-specific enhancements */
+@media (min-width: 1024px) {
+    .feature-card {
+        flex: 1 1 calc(25% - 2rem)
+    }
+}
